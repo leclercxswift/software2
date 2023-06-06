@@ -87,7 +87,7 @@ h2{
 {% for publicaciones in publicaciones %}
 <article>
   <div class="container-article contenedor margenes_chistosas">
-    <img class="margenes_chistosas" src="{{ publicaciones.user.Perfil.image }}">
+    <img class="margenes_chistosas" src="{{publicaciones.user.perfil.image}}">
     <div class="">
         <h2 class="username"><a href="{% url 'perfil' publicaciones.user.username %}" class="alv">@{{ publicaciones.user.username }}</a></h2>
         <i class="clock"></i>
