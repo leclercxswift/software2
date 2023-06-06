@@ -3,7 +3,7 @@ from django.db import models
 # Create your models here.
 class Category(models.Model):
     title=models.CharField(max_length=200)
-    category_image=models.URLField(max_length = 500,default="https://www.nintenderos.com/wp-content/uploads/2023/02/zelda-tears-loh-e1676061751412.jpg")
+    category_image=models.URLField(max_length = 500,default="https://cdn-icons-png.flaticon.com/512/3135/3135768.png")
 
     class Meta:
         verbose_name_plural='Categories'
