@@ -15,7 +15,7 @@ class Category(models.Model):
 class News(models.Model):
     category=models.ForeignKey(Category,on_delete=models.CASCADE)
     title=models.CharField(max_length=300)
-    image=models.ImageField(upload_to='news_foto')
+    image=models.URLField(max_length = 500,default="https://www.nintenderos.com/wp-content/uploads/2023/02/zelda-tears-loh-e1676061751412.jpg")
     detail=models.TextField()
     add_time=models.DateTimeField(auto_now_add=True)
 
