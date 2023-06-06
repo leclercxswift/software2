@@ -1,0 +1,22 @@
+html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+  
+  }
+  .categorias-menu,.navbar{
+  background: linear-gradient(217deg, rgba(200,10,110,0.9), rgba(30,30,30,1));
+    
+  }
+  .tarje{
+    background: linear-gradient(217deg, rgba(200,10,110,0.9), rgba(30,30,30,1));
+  }
+  .tarjetas{
+    margin:auto;
+  }
+  .categorias-menu a:hover{
+    color: black !important;
+  background-image: url("/juliana silva.png");
+  
+  }
+  

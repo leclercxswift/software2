@@ -1,0 +1,15 @@
+.nav-noticia, .container:not(.naviga), body{
+    background: linear-gradient(190deg, rgba(200,10,110,0.9), rgba(30,30,30,1));
+}
+.card{
+        background: linear-gradient(217deg, rgba(238, 8, 58, 0.9)0%, rgb(95, 6, 95,1)60%);
+        color:aliceblue;
+        border:none;
+}
+.border-bottom{
+    color:aliceblue;
+}
+.btn{
+    background-color: blueviolet;
+    border:none;
+}

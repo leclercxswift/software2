@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>alerta</title>
+    <!-- Agrega aquí tus estilos CSS y otros scripts -->
+</head>
+<body>
+    {% block content %}
+    {% endblock %}
+
+    <!-- Código JavaScript para mostrar la alerta al cerrar sesión -->
+    <script>
+        window.addEventListener('beforeunload', function(e) {
+            // Mensaje de la alerta
+            var confirmationMessage = '¿Estás seguro de que deseas cerrar sesión?';
+
+            // Agrega el mensaje a la alerta del navegador
+            (e || window.event).returnValue = confirmationMessage;
+            return confirmationMessage;
+        });
+    </script>
+</body>
+</html>
