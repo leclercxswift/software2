@@ -18,7 +18,7 @@ class Producto(models.Model):
      title = models.CharField(max_length=50)
      description =models.TextField(max_length=150)
      price = models.FloatField()
-     img = models.URLField(max_length = 200,default="https://www.nintenderos.com/wp-content/uploads/2023/02/zelda-tears-loh-e1676061751412.jpg")
+     img = models.URLField(max_length = 500,default="https://www.nintenderos.com/wp-content/uploads/2023/02/zelda-tears-loh-e1676061751412.jpg")
      category =models.CharField(max_length=20,choices=CATEGORIES)
      prolink=models.URLField(max_length = 200,default="https://www.epicgames.com/site/es-ES/home?sessionInvalidated=true")
     
