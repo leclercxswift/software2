@@ -8,7 +8,7 @@ from django.db.models.signals import post_save
 class Perfil(models.Model):
     
     user= models.OneToOneField(User,on_delete=models.CASCADE)
-    image= models.ImageField(upload_to='foto_perfil',default="foto_perfil/1600w-41B81rUGLAg.webp")
+    image= models.URLField(max_length = 500,default="https://cdn2.excelsior.com.mx/media/styles/grande/public/pictures/2023/02/03/2898189.jpg")
     def __str__(self) -> str:
         return f' Usuario de {self.user.username}'
     def following(self):
